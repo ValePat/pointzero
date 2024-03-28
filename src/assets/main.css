@@ -1,0 +1,84 @@
+@import './base.css';
+
+#links{
+  position: absolute;
+  bottom: 80px; /* Adjust the distance from the bottom as needed */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Centering horizontally */
+  z-index: 3; 
+}
+
+#text {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  z-index: 2; /* Ensure content appears above the video */
+}
+
+.background-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  overflow: hidden;
+  z-index: 1;
+}
+
+.container {
+  text-align: center;
+  margin-top: 80px !important; /* Adjust as needed */
+  width: 80%;
+  margin: auto;
+  z-index: 2; /* Ensure content appears above the video */
+}
+
+#video-bg {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Centering trick */
+  min-width: 100%; /* Ensure video covers entire viewport width */
+  min-height: 100%; /* Ensure video covers entire viewport height */
+  object-fit: cover ;
+}
+
+
+
+
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+}
