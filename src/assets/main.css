@@ -1,14 +1,29 @@
 @import './base.css';
 
+p {
+  color: white;
+  font-size: 12pt;
+}
+
+#logo {
+  width: 50%;
+}
+
+#logo-container{
+  position: absolute;
+  top: 0%;
+}
+
 #links{
   position: absolute;
-  bottom: 80px; /* Adjust the distance from the bottom as needed */
+  bottom: 120px; /* Adjust the distance from the bottom as needed */
   left: 50%; /* Center horizontally */
   transform: translateX(-50%); /* Centering horizontally */
   z-index: 3; 
 }
 
 #text {
+  width: 100%;
   position: absolute;
   top: 40%;
   transform: translateY(-50%);
@@ -25,6 +40,7 @@
   align-items: center; /* Center horizontally */
   overflow: hidden;
   z-index: 1;
+  background-color: black;
 }
 
 .container {
@@ -49,13 +65,13 @@
 
 
 
-#app {
+/* #app {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   font-weight: normal;
 }
-
+ */
 a,
 .green {
   text-decoration: none;
@@ -70,7 +86,7 @@ a,
   }
 }
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
   body {
     display: flex;
     place-items: center;
@@ -81,4 +97,4 @@ a,
     grid-template-columns: 1fr 1fr;
     padding: 0 2rem;
   }
-}
+} */

@@ -2,17 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="/src/assets/imgs/P0_logo.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pzero-collective</title>
   </head>
   <body>
-  <div class="background-container">
-    <video id="video-bg" width="640" height="360" autoplay loop muted >
-      <source src="/src/assets/video/video-test.mp4" type="video/mp4">
-    </video>
-    <div class="container" id="logo">
-      <p>pzero logo</p>
+  <div class="background-container" id="particles-js">
+    <div class="container" id="logo-container">
+      <img src="/src/assets/imgs/Pointzero_logo.svg" id="logo"/>
     </div>
     <div class="container" id="text">
       <p>An art studio creates audiovisual experiences. </br> Our passion guides the exploration of connections between creativity and innovation.</p>
@@ -25,6 +22,8 @@
 
     <script type="module" src="/src/main.js"></script>
     <script type="module" src="/src/assets/main.css"></script>
+    <script type="module" src="/src/particles.js"></script>
+    <script type="module" src="/src/app.js"></script>
   </body>
   </body>
 </html>
