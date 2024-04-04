@@ -1,7 +1,6 @@
 import './assets/main.css'
 
 window.onload = function() {
-    debugger
     // Controlla se è già stato salvato un flag di ricarica
     var reloadFlag = localStorage.getItem('reloadFlag');
     // Se non è stato salvato alcun flag di ricarica, ricarica la pagina

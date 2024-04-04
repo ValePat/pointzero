@@ -2,7 +2,7 @@
 
 p {
   color: white;
-  font-size: 12pt;
+  font-size: 14pt;
 }
 
 #logo {
@@ -16,16 +16,29 @@ p {
 
 #links{
   position: absolute;
-  bottom: 120px; /* Adjust the distance from the bottom as needed */
+  bottom: 33%; /* Adjust the distance from the bottom as needed */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Centering horizontally */
+  z-index: 3; 
+  font-size: 14pt;
+}
+
+#email{
+  position: absolute;
+  bottom: 10%; /* Adjust the distance from the bottom as needed */
   left: 50%; /* Center horizontally */
   transform: translateX(-50%); /* Centering horizontally */
   z-index: 3; 
 }
 
+#email p {
+  font-size: 12.5pt;
+}
+
 #text {
-  width: 100%;
+  width: 80%;
   position: absolute;
-  top: 40%;
+  top: 30%;
   transform: translateY(-50%);
   z-index: 2; /* Ensure content appears above the video */
 }
